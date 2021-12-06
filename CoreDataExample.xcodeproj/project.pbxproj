@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A249A978275E592900E35341 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A249A977275E592900E35341 /* .gitignore */; };
+		A249A97A275E59E800E35341 /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A249A979275E59E800E35341 /* DataStoreManager.swift */; };
 		A2625913275D2E5200448D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2625912275D2E5200448D77 /* AppDelegate.swift */; };
 		A2625915275D2E5200448D77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2625914275D2E5200448D77 /* SceneDelegate.swift */; };
 		A2625917275D2E5200448D77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2625916275D2E5200448D77 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A249A977275E592900E35341 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A249A979275E59E800E35341 /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
 		A262590F275D2E5200448D77 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2625912275D2E5200448D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2625914275D2E5200448D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A249A976275E564E00E35341 /* Models */,
 				A2625912275D2E5200448D77 /* AppDelegate.swift */,
 				A2625914275D2E5200448D77 /* SceneDelegate.swift */,
+				A249A979275E59E800E35341 /* DataStoreManager.swift */,
 				A2625916275D2E5200448D77 /* ViewController.swift */,
 				A2625918275D2E5200448D77 /* Main.storyboard */,
 				A262591E275D2E5300448D77 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				A262591D275D2E5200448D77 /* CoreDataExample.xcdatamodeld in Sources */,
 				A262592F275D33BC00448D77 /* Company+CoreDataClass.swift in Sources */,
 				A262592D275D33BC00448D77 /* User+CoreDataClass.swift in Sources */,
+				A249A97A275E59E800E35341 /* DataStoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,6 +38,8 @@ class DataStoreManager {
         })
         return container
     }()
+    
+    lazy var viewContext = persistentContainer.viewContext
 
     // MARK: - Core Data Saving support
 
@@ -53,5 +55,24 @@ class DataStoreManager {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func obtainMainUser() -> User {
+        
+        let company = Company(context: viewContext)
+        company.name = "Apple"
+        
+        let user = User(context: viewContext)
+        user.name = "Tommy"
+        user.age = 25
+        user.company = company
+        
+        do {
+            try viewContext.save()
+        } catch let error {
+            print("Error: \(error)")
+        }
+        
+        return user
     }
 }

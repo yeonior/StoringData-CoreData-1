@@ -59,20 +59,28 @@ class DataStoreManager {
     
     func obtainMainUser() -> User {
         
-        let company = Company(context: viewContext)
-        company.name = "Apple"
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        fetchRequest.predicate = NSPredicate(format: "isMain = true")
         
-        let user = User(context: viewContext)
-        user.name = "Tommy"
-        user.age = 25
-        user.company = company
-        
-        do {
-            try viewContext.save()
-        } catch let error {
-            print("Error: \(error)")
+        if let users = try? viewContext.fetch(fetchRequest) as? [User], !users.isEmpty {
+            return users.first!
+        } else {
+            let company = Company(context: viewContext)
+            company.name = "Apple"
+            
+            let user = User(context: viewContext)
+            user.name = "Tommy"
+            user.age = 25
+            user.company = company
+            user.isMain = true
+            
+            do {
+                try viewContext.save()
+            } catch let error {
+                print("Error: \(error)")
+            }
+            
+            return user
         }
-        
-        return user
     }
 }

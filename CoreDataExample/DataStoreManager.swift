@@ -83,4 +83,18 @@ class DataStoreManager {
             return user
         }
     }
+    
+    func updateMainUser(with name: String) {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        fetchRequest.predicate = NSPredicate(format: "isMain = true")
+        
+        if let users = try? viewContext.fetch(fetchRequest) as? [User], !users.isEmpty {
+            
+            guard let mainUser = users.first else { return }
+            
+            mainUser.name = name
+            try? viewContext.save()
+        }
+    }
 }

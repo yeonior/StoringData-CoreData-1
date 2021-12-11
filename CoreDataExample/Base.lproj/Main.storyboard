@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-4Q-f5Y">
-                                <rect key="frame" x="100" y="229" width="214" height="93"/>
+                                <rect key="frame" x="100" y="229" width="214" height="179"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxe-ie-DkF">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="20.5"/>
@@ -32,6 +32,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHI-GY-0ql">
+                                        <rect key="frame" x="0.0" y="145" width="214" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -47,6 +52,7 @@
                     <connections>
                         <outlet property="ageLabel" destination="wHh-fw-DU9" id="4A3-90-z5E"/>
                         <outlet property="nameLabel" destination="Zxe-ie-DkF" id="eSK-yM-2PU"/>
+                        <outlet property="textField" destination="iHI-GY-0ql" id="vO7-dW-plN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

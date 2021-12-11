@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  CoreDataExample
 //
-//  Created by ruslan on 05.12.2021.
+//  Created by ruslan on 11.12.2021.
 //
 //
 
@@ -16,9 +16,10 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var user: String?
     @NSManaged public var age: Int16
-    @NSManaged public var name: String
+    @NSManaged public var anyBool: NSNumber?
+    @NSManaged public var isMain: Bool
+    @NSManaged public var name: String?
     @NSManaged public var company: Company?
 
 }

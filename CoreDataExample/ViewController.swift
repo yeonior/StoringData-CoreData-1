@@ -11,11 +11,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     var dataStoreManager = DataStoreManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.delegate = self
         
         nameLabel.adjustsFontSizeToFitWidth = true
         ageLabel.adjustsFontSizeToFitWidth = true
@@ -27,3 +30,17 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let name = textField.text else { return }
+        
+        dataStoreManager.updateMainUser(with: name)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+}

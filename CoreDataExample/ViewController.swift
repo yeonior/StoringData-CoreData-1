@@ -20,9 +20,13 @@ class ViewController: UIViewController {
         
         textField.delegate = self
         
-        nameLabel.adjustsFontSizeToFitWidth = true
-        ageLabel.adjustsFontSizeToFitWidth = true
+        nameLabel.sizeToFit()
+        ageLabel.sizeToFit()
         
+        updateNameLabel()
+    }
+    
+    func updateNameLabel() {
         let user = dataStoreManager.obtainMainUser()
         
         nameLabel.text = user.name
@@ -36,6 +40,7 @@ extension ViewController: UITextFieldDelegate {
         guard let name = textField.text else { return }
         
         dataStoreManager.updateMainUser(with: name)
+        updateNameLabel()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {        

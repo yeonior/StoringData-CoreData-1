@@ -32,6 +32,11 @@ class ViewController: UIViewController {
         nameLabel.text = user.name
         ageLabel.text = String(user.age)
     }
+    
+    @IBAction func removeDidPressed(_ sender: Any) {
+        dataStoreManager.removeMainUser()
+        updateNameLabel()
+    }
 }
 
 extension ViewController: UITextFieldDelegate {
@@ -45,6 +50,7 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {        
         textField.resignFirstResponder()
+        textField.text = ""
         
         return true
     }

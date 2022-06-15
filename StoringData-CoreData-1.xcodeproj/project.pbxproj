@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		A249A977275E592900E35341 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A249A979275E59E800E35341 /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
-		A262590F275D2E5200448D77 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A262590F275D2E5200448D77 /* StoringData-CoreData-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoringData-CoreData-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2625912275D2E5200448D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2625914275D2E5200448D77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A2625916275D2E5200448D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A249A977275E592900E35341 /* .gitignore */,
-				A2625911275D2E5200448D77 /* CoreDataExample */,
+				A2625911275D2E5200448D77 /* StoringData-CoreData-1 */,
 				A2625910275D2E5200448D77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,12 +74,12 @@
 		A2625910275D2E5200448D77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A262590F275D2E5200448D77 /* CoreDataExample.app */,
+				A262590F275D2E5200448D77 /* StoringData-CoreData-1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2625911275D2E5200448D77 /* CoreDataExample */ = {
+		A2625911275D2E5200448D77 /* StoringData-CoreData-1 */ = {
 			isa = PBXGroup;
 			children = (
 				A249A976275E564E00E35341 /* Models */,
@@ -93,15 +93,15 @@
 				A2625923275D2E5300448D77 /* Info.plist */,
 				A262591B275D2E5200448D77 /* CoreDataExample.xcdatamodeld */,
 			);
-			path = CoreDataExample;
+			path = "StoringData-CoreData-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A262590E275D2E5200448D77 /* CoreDataExample */ = {
+		A262590E275D2E5200448D77 /* StoringData-CoreData-1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2625926275D2E5300448D77 /* Build configuration list for PBXNativeTarget "CoreDataExample" */;
+			buildConfigurationList = A2625926275D2E5300448D77 /* Build configuration list for PBXNativeTarget "StoringData-CoreData-1" */;
 			buildPhases = (
 				A262590B275D2E5200448D77 /* Sources */,
 				A262590C275D2E5200448D77 /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreDataExample;
+			name = "StoringData-CoreData-1";
 			productName = CoreDataExample;
-			productReference = A262590F275D2E5200448D77 /* CoreDataExample.app */;
+			productReference = A262590F275D2E5200448D77 /* StoringData-CoreData-1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A262590A275D2E5200448D77 /* Build configuration list for PBXProject "CoreDataExample" */;
+			buildConfigurationList = A262590A275D2E5200448D77 /* Build configuration list for PBXProject "StoringData-CoreData-1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A262590E275D2E5200448D77 /* CoreDataExample */,
+				A262590E275D2E5200448D77 /* StoringData-CoreData-1 */,
 			);
 		};
 /* End PBXProject section */
@@ -324,12 +324,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3JHK4U826;
-				INFOPLIST_FILE = CoreDataExample/Info.plist;
+				INFOPLIST_FILE = "StoringData-CoreData-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = YeoCompany.CoreDataExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "YeoCompany.StoringData-CoreData-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,12 +343,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3JHK4U826;
-				INFOPLIST_FILE = CoreDataExample/Info.plist;
+				INFOPLIST_FILE = "StoringData-CoreData-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = YeoCompany.CoreDataExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "YeoCompany.StoringData-CoreData-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +358,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A262590A275D2E5200448D77 /* Build configuration list for PBXProject "CoreDataExample" */ = {
+		A262590A275D2E5200448D77 /* Build configuration list for PBXProject "StoringData-CoreData-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2625924275D2E5300448D77 /* Debug */,
@@ -367,7 +367,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2625926275D2E5300448D77 /* Build configuration list for PBXNativeTarget "CoreDataExample" */ = {
+		A2625926275D2E5300448D77 /* Build configuration list for PBXNativeTarget "StoringData-CoreData-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2625927275D2E5300448D77 /* Debug */,

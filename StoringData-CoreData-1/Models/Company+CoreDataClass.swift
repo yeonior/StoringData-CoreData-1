@@ -1,6 +1,6 @@
 //
 //  Company+CoreDataClass.swift
-//  CoreDataExample
+//  StoringData-CoreData-1
 //
 //  Created by ruslan on 05.12.2021.
 //

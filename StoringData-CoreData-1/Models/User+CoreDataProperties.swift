@@ -1,6 +1,6 @@
 //
 //  User+CoreDataProperties.swift
-//  CoreDataExample
+//  StoringData-CoreData-1
 //
 //  Created by ruslan on 11.12.2021.
 //

@@ -1,6 +1,6 @@
 //
 //  DataStoreManager.swift
-//  CoreDataExample
+//  StoringData-CoreData-1
 //
 //  Created by ruslan on 06.12.2021.
 //
